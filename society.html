@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Society Protocol case study — Camila Mancusi</title>
+<meta name="description" content="QA for Society Protocol: functional and regression testing of accounts, communities, badges and permissions.">
+<meta name="author" content="Camila Mancusi">
+<link rel="canonical" href="https://camimancusi.github.io/society.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Society Protocol case study — Camila Mancusi">
+<meta property="og:description" content="QA for Society Protocol: functional and regression testing of accounts, communities, badges and permissions.">
+<meta property="og:url" content="https://camimancusi.github.io/society.html">
+<meta property="og:image" content="https://camimancusi.github.io/assets/portrait.webp">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#6E1F33">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%236E1F33'/%3E%3Ctext x='50' y='66' font-size='48' text-anchor='middle' fill='%23F7EDE8' font-family='Georgia,serif' font-style='italic'%3ECM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F1EA}
+a{color:#6E1F33}a:hover{color:#3E1220}
+</style>
+<style>
+img{max-width:100%}
+.pill{min-height:44px;padding:0 1.2rem;border-radius:999px;border:1px solid #6E1F33;background:transparent;color:#6E1F33;font-family:Inter,system-ui,sans-serif;font-size:0.95rem;font-weight:500;cursor:pointer}
+.pill.is-on{background:#6E1F33;color:#F7EDE8}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #2A1A1F; background: #F7F1EA; font-size: 1rem; line-height: 1.6">
+<header style="max-width: 1200px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem">
+<a href="index.html" style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-weight: 500; font-size: 1.5rem; color: #2A1A1F; text-decoration: none">Camila<span style="font-style: italic; color: #6E1F33"> Mancusi</span></a>
+<a href="index.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem; border-radius: 999px; border: 1px solid #6E1F33; color: #6E1F33; text-decoration: none; font-weight: 500">← All case studies</a>
+</header>
+<section style="max-width: 1200px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 4.5rem">
+<p style="margin: 0 0 1rem; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6E1F33">Case study · QA · Community platform</p>
+<h1 style="margin: 0; font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-weight: 500; font-size: clamp(3rem, 8vw, 6.5rem); line-height: 0.95; letter-spacing: -0.035em">Society Protocol</h1>
+<p style="margin: 1.75rem 0 0; max-width: 46rem; font-size: 1.25rem; color: #6B5A5E">Society Protocol is a platform where communities issue membership badges, manage roles and permissions, and run their own token.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2.5rem"><div style="flex: 1 1 200px; min-width: 0; padding-top: 1rem; border-top: 1px solid #E6D6D0"><div style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B5A5E">Role</div><div style="margin-top: 0.35rem">QA</div></div><div style="flex: 1 1 200px; min-width: 0; padding-top: 1rem; border-top: 1px solid #E6D6D0"><div style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B5A5E">Testing</div><div style="margin-top: 0.35rem">Functional · regression</div></div><div style="flex: 1 1 200px; min-width: 0; padding-top: 1rem; border-top: 1px solid #E6D6D0"><div style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B5A5E">Platform</div><div style="margin-top: 0.35rem">Web app</div></div><div style="flex: 1 1 200px; min-width: 0; padding-top: 1rem; border-top: 1px solid #E6D6D0"><div style="font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6B5A5E">Link</div><div style="margin-top: 0.35rem"><a href="https://app.societyprotocol.io">app.societyprotocol.io ↗</a></div></div></div>
+<div style="margin-top: 3.5rem"><a href="https://app.societyprotocol.io" aria-label="Society Protocol product screenshot" style="display: block; text-decoration: none; border-radius: 14px; overflow: hidden; background: #FFFCF8; border: 1px solid #E6D6D0; box-shadow: 0 30px 60px -30px rgba(62,18,32,0.35)"><span aria-hidden="true" style="display: flex; gap: 6px; padding: 10px 14px; background: #F3E1DE; border-bottom: 1px solid #E6D6D0"><span style="width: 10px; height: 10px; border-radius: 999px; background: #E8C4C4"></span><span style="width: 10px; height: 10px; border-radius: 999px; background: #E8C4C4"></span><span style="width: 10px; height: 10px; border-radius: 999px; background: #E8C4C4"></span></span><img src="assets/shot-society.webp" alt="Society Protocol product screenshot" style="display: block; width: 100%; height: auto"></a></div>
+</section>
+<section style="max-width: 1200px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 6rem">
+<p style="margin: 0 0 1rem; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6E1F33">The challenge</p>
+<div style="display: flex; flex-wrap: wrap; gap: 1.25rem"><div style="flex: 1 1 300px; min-width: 0; padding: 1.75rem; border-radius: 16px; background: #F3E1DE"><h3 style="margin: 0 0 0.5rem; font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-weight: 500; font-size: 1.4rem">Permissions everywhere</h3><p style="margin: 0; color: #6B5A5E">Every action depends on who you are in a community: who can create, issue, revoke or transfer a badge.</p></div></div>
+</section>
+<section style="max-width: 1200px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 6rem">
+<p style="margin: 0 0 1rem; font-family: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6E1F33">What I did</p>
+<ol style="margin: 0; padding: 0; list-style: none; max-width: 52rem"><li style="display: flex; gap: 1.1rem; padding: 1.4rem 0; border-top: 1px solid #E6D6D0"><span style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-style: italic; color: #6E1F33; font-size: 1.15rem; min-width: 1.8rem">01</span><div><strong style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-weight: 500; font-size: 1.3rem">What I tested</strong><p style="margin: 0.3rem 0 0; color: #6B5A5E">Accounts, communities, badges and permissions: creating, issuing, revoking and transferring them, plus who is allowed to do what.</p></div></li><li style="display: flex; gap: 1.1rem; padding: 1.4rem 0; border-top: 1px solid #E6D6D0"><span style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-style: italic; color: #6E1F33; font-size: 1.15rem; min-width: 1.8rem">02</span><div><strong style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-weight: 500; font-size: 1.3rem">Regression</strong><p style="margin: 0.3rem 0 0; color: #6B5A5E">I re-checked core flows as new features landed, so existing communities kept working.</p></div></li></ol>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; padding-top: 5rem; padding-bottom: 5rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem">
+<a href="index.html#contact" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 1.6rem; border-radius: 999px; background: #6E1F33; color: #F7EDE8; text-decoration: none; font-weight: 500">Work with me</a>
+<a href="wadz.html" style="font-family: 'Fraunces', Georgia, 'Times New Roman', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); color: #2A1A1F; text-decoration: none">Next: <span style="font-style: italic; color: #6E1F33">WADZ+ →</span></a>
+</section>
+</div>
+
+</body>
+</html>

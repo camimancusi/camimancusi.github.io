@@ -1,0 +1,53 @@
+# Camila Mancusi — Project Manager & QA
+
+> Camila Mancusi is a Project Manager and QA Engineer based in Buenos Aires, Argentina (GMT-3), with 6+ years of experience in software quality and delivery across banking, fintech and Web3. She leads projects from kickoff to launch and tests them end to end. English C1. Open to full-time and freelance roles, remote, available now.
+
+## Profile
+- Roles: Project Manager, QA Engineer, QA Lead
+- Experience: 6+ years; 20+ projects delivered as PM, QA or both
+- Industries: banking, fintech, Web3 and more
+- Education: Software Engineer, Universidad Nacional de La Matanza (UNLaM); university lecturer
+- Research: Best Paper co-author, CONAISI 2018
+- Languages: Spanish (native), English (C1)
+- Location: Buenos Aires, Argentina · remote
+- Availability: immediate · full-time or freelance
+
+## Skills
+- Project management: scope, backlog, sprint planning, estimation, risk tracking, release coordination, milestone acceptance, invoicing, client communication, Agile/Scrum
+- Testing: functional, exploratory, regression, smoke, acceptance/UAT, mobile, cross-browser, risk-based, Web3 and wallet flows
+- API testing: REST services with Postman, integration between systems
+- Databases: SQL (JOINs, subqueries) on SQL Server, MySQL and PostgreSQL; DBeaver, pgAdmin; data integrity and migration validation
+- Technical: log analysis, Git, on-chain transaction verification
+- Automation: Playwright (TypeScript), Selenium (Java), Cypress; AI-assisted test automation
+- Tools: Jira, ClickUp, Azure DevOps, Qase, HP ALM
+
+## Experience
+- Protofire — Project Manager & QA Engineer
+- Atix Labs — QA Analyst & Business Analyst
+- Gestión IT (client: Red Link) — QA Test Analyst, fintech
+- TGV Soluciones Informáticas — Quality Assurance
+
+## Selected case studies
+- WADZ+ (PM + QA): investment platform in production with real funds; client kickoff, biweekly invoicing and milestone acceptance across three workstreams; production and backoffice testing. https://dapp.wadz.plus
+- BitUSD (PM): lending platform; team of 5; launched in production on Oasis Sapphire and Base. https://www.bitusd.finance/
+- COTI Snap (PM): MetaMask plugin and web app for private assets; team of 3; published in the official MetaMask Snaps directory. https://metamask.coti.io
+- Token project (PM, confidential client): task tracking and planning new work for growth.
+- Cross-border payments (QA, confidential client): found critical validation gaps in the admin backoffice before release.
+- Automated investing (QA, confidential client): staging and production testing with capped real funds; traced a race condition in the KYC flow.
+- Society Protocol (QA): functional and regression testing of accounts, communities, badges and permissions. https://app.societyprotocol.io
+
+## Work samples
+- Automation sample (Playwright + TypeScript, AI-assisted): https://github.com/camimancusi/qa-portfolio-playwright
+
+## Pages
+- Home (EN): https://camimancusi.github.io/
+- Inicio (ES): https://camimancusi.github.io/es.html
+- WADZ+ case study: https://camimancusi.github.io/wadz.html
+- BitUSD case study: https://camimancusi.github.io/bitusd.html
+- COTI Snap case study: https://camimancusi.github.io/coti.html
+- Society Protocol case study: https://camimancusi.github.io/society.html
+- CV (PDF): https://camimancusi.github.io/assets/Camila-Mancusi-CV.pdf
+
+## Contact
+- Email: camilamancusi@gmail.com
+- LinkedIn: https://linkedin.com/in/camilamancusi
